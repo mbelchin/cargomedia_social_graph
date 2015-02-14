@@ -1,13 +1,15 @@
 # cargomedia_social_graph
-Small test for CargoMedia
+Small tests for CargoMedia usign different approaches and technologies
 
-CargoMedia Social Graph Python and mongoDB Example
+CargoMedia Social Graph 
+Python and mongoDB Example
 ===========
 
 **Requirements for Python-mongDB sample**
-Python
-mongoDB
-pymongo
+
+* Python
+* mongoDB
+* pymongo
 
 **Usage**
 
