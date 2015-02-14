@@ -94,7 +94,7 @@ class CommandLineOptions(object):
         print VERSION
         sys.exit(0)
 
-      elif option in ('-t', '--t', '--test'):
+      elif option in ('-t', '--t', '--tests'):
         import doctest
         doctest.testmod(verbose=True)
 
