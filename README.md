@@ -51,14 +51,17 @@ Get UserId (1) suggested friends:
 <pre>
 python social_graph.py --suggested_friends [USER_ID]
 
-python social_graph.py -s 7
+python social_graph.py -s 1
 </pre>
 
 **Tests**
 
 Run tests using:
 <pre>
-python social_graph.py --tests
+python -m doctestsocial_graph.py
+</pre>
 
-python social_graph.py -t
+Or:
+<pre>
+python -m doctest -v social_graph.py
 </pre>

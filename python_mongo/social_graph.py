@@ -12,7 +12,7 @@ Usage:
 Options:
   -h, --h, --help               : Show help.
   -v, --v, --version            : Show version software.
-  -t, --t, --tests              : Run tests.
+  -t, --t, --tests              : Show running tests information.
   -l, --l, --load               : Load given [JSON FILE] into mongoDB.
   -i, --i, --info               : Get info for a given [USER ID].
   -f, --f, --friends            : Get friends for a given [USER ID].
@@ -150,8 +150,9 @@ class SocialGraphAPI(object):
         self.response.message = VERSION
         
       elif option in ('-t', '--t', '--tests'):
-        import doctest
-        doctest.testmod(verbose=True)
+        print __file__
+        self.response.message = ('Use python -m doctest -v %s to '
+          'run tests' % __file__)
         
       elif option in ('-l', '--l', '--load'):
         if not arguments:
