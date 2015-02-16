@@ -58,7 +58,7 @@ python social_graph.py -s 1
 
 Run tests using:
 <pre>
-python -m doctestsocial_graph.py
+python -m doctest social_graph.py
 </pre>
 
 Or:
